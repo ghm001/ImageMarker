@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:widget="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/popupwindow_layout"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <!--android:background="@drawable/radius_drawable_bg"-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="兴趣爱好选择"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@color/theme1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <com.team.imagemarker.utils.MyGridView
+            android:id="@+id/grid_selected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="4" />
+
+        <TextView
+            android:id="@+id/waring_user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="请从下面选择您的兴趣爱好"
+            android:textColor="#808080"
+            android:textSize="15sp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#f5f5f5"
+            android:layout_marginTop="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="兴趣种类"
+                android:textSize="14sp"
+                android:textColor="@color/theme"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_change_items"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="换一批"
+                android:textColor="@color/theme"
+                android:textSize="14sp"
+                android:drawableLeft="@mipmap/change_data"
+                android:drawablePadding="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:gravity="center" />
+
+            </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#f5f5f5"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_details"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
+    <com.team.imagemarker.utils.PaperButton
+        android:id="@+id/user_hobby_submit"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        widget:paper_corner_radius="19dp"
+        widget:paper_text="确 定"
+        widget:paper_text_size="16sp"
+        widget:paper_color="@color/button"
+        widget:paper_text_color="@color/write" />
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="积分排行榜"
+        android:textColor="@color/write"
+        android:textSize="19sp"
+        android:textStyle="bold|italic"
+        android:gravity="center"
+        android:background="@color/theme"/>
+
+    <ListView
+        android:id="@+id/user_integral_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#eeeeee"
+        android:dividerHeight="0.5dp"
+        android:scrollbars="vertical"
+        android:cacheColorHint="#fafafa"/>
+
+</LinearLayout>

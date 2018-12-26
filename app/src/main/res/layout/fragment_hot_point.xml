@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/hot_recycleview"-->
+        <!--android:scrollbars="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/hot_recycleview"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/add_hobby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rfab__drawable_rfab_default"
+        android:clickable="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginRight="24dp"
+        app:backgroundTint="#F88F55"
+        app:rippleColor="#F88F55"
+        app:fabSize="normal"
+        app:layout_anchor="@id/hot_recycleview"
+        app:layout_anchorGravity="bottom|right"/>
+
+</android.support.design.widget.CoordinatorLayout>

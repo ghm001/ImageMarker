@@ -1,0 +1,36 @@
+{
+  "code": 200,
+  "msg": "ok",
+  "result": [
+    {
+      "coverImageUrl": "http://obs.myhwclouds.com/look.admin.image/老马识途/2017-5-21/狗-海滩-海水-日落.jpg",
+      "mapImageUrl": "http://obs.myhwclouds.com/look.admin.image/老马识途/2017-5-21/狗-海滩-海水-日落.jpg",
+      "imgTag": "狗-大海-沙滩"
+    },
+    {
+      "coverImageUrl": "http://obs.myhwclouds.com/look.admin.image/老马识途/2017-5-21/柏树-山-湖-天空-建筑.jpg",
+      "mapImageUrl": "http://obs.myhwclouds.com/look.admin.image/老马识途/2017-5-21/柏树-山-湖-天空-建筑.jpg",
+      "imgTag": "夕阳-湖水-青山"
+    },
+    {
+      "coverImageUrl": "http://obs.myhwclouds.com/look.admin.image/老马识途/2017-5-21/大海-沙滩-远山-天空.jpg",
+      "mapImageUrl": "http://obs.myhwclouds.com/look.admin.image/老马识途/2017-5-21/大海-沙滩-远山-天空.jpg",
+      "imgTag": "天空-大海-沙滩"
+    },
+    {
+      "coverImageUrl": "http://obs.myhwclouds.com/look.admin.image/老马识途/2017-5-21/白云岩-高山-水-天空-树.jpg",
+      "mapImageUrl": "http://obs.myhwclouds.com/look.admin.image/老马识途/2017-5-21/白云岩-高山-水-天空-树.jpg",
+      "imgTag": "天空-植被-草地"
+    },
+    {
+      "coverImageUrl": "http://obs.myhwclouds.com/look.admin.image/老马识途/2017-5-21/草地-树木-天空-建筑-大海.jpg",
+      "mapImageUrl": "http://obs.myhwclouds.com/look.admin.image/老马识途/2017-5-21/草地-树木-天空-建筑-大海.jpg",
+      "imgTag": "海水-草地"
+    },
+    {
+      "coverImageUrl": "http://obs.myhwclouds.com/look.admin.image/老马识途/2017-5-21/高山-树木-建筑-草地-天空.jpg",
+      "mapImageUrl": "http://obs.myhwclouds.com/look.admin.image/老马识途/2017-5-21/高山-树木-建筑-草地-天空.jpg",
+      "imgTag": "高山-树林"
+    }
+  ]
+}

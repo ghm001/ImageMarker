@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+
+        <com.team.imagemarker.utils.RoundAngleImageView
+            android:id="@+id/item_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:roundHeight="6dp"
+            app:roundWidth="6dp"/>
+
+        <com.team.imagemarker.utils.RoundAngleImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/more_category_black"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/triangle"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/more_category_triangle"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="-4dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="这是一句描述，随便什么都行"
+            android:textSize="15sp"
+            android:textColor="@color/write"
+            android:layout_above="@+id/triangle"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"/>
+
+        </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/more_item_recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/write"/>
+
+</LinearLayout>

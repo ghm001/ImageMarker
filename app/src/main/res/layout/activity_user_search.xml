@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme1"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp">
+
+        <TextView
+            android:id="@+id/search_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="返回"
+            android:textColor="@color/write"
+            android:textSize="16sp" />
+
+        <include
+            layout="@layout/search_bar"
+            android:layout_toRightOf="@+id/search_back"
+            android:layout_toLeftOf="@+id/to_search"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <TextView
+            android:id="@+id/to_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="搜索"
+            android:textColor="@color/write"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lvShowResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/tvSearchHistory"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/background"
+        android:dividerHeight="2dp"
+        android:fastScrollEnabled="true"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/layoutHotWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="大家都在搜"
+            android:textColor="#ff403b37" />
+
+        <TextView
+            android:id="@+id/tvChangeWords"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@mipmap/refresh"
+            android:drawablePadding="5dp"
+            android:text="换一批"
+            android:textColor="#ff403b37" />
+
+        <com.team.imagemarker.utils.tag.TagGroup
+            android:id="@+id/tag_group"
+            style="@style/TagGroup"
+            android:layout_below="@+id/tvChangeWords"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="8dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tvSearchHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索历史"
+            android:textColor="#ff403b37"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:drawableLeft="@mipmap/delete_enable_light"
+            android:drawablePadding="5dp"
+            android:enabled="true"
+            android:padding="3dp"
+            android:text="清空"
+            android:textColor="#ff403b37" />
+
+        <ListView
+            android:id="@+id/lvSearchHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSearchHistory"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginTop="3dp"
+            android:divider="@color/background"
+            android:dividerHeight="2dp"
+            android:scrollbars="none" />
+
+    </RelativeLayout>
+
+</LinearLayout>

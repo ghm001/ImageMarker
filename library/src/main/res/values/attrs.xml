@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RapidFloatingActionLayout">
+        <attr name="rfal_frame_color" format="color"/>
+        <attr name="rfal_frame_alpha" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="RapidFloatingActionButton">
+        <attr name="rfab_size" format="enum">
+            <!-- 56dp -->
+            <enum name="normal" value="0"/>
+            <!-- 40dp -->
+            <enum name="mini" value="1"/>
+        </attr>
+        <attr name="rfab_drawable" format="reference"/>
+        <attr name="rfab_color_normal" format="color"/>
+        <attr name="rfab_color_pressed" format="color"/>
+        <attr name="rfab_shadow_radius" format="dimension"/>
+        <attr name="rfab_shadow_color" format="color"/>
+        <attr name="rfab_shadow_dx" format="dimension"/>
+        <attr name="rfab_shadow_dy" format="dimension"/>
+        <!-- identificationCode用于确定唯一个RFAB，目前用在通过RapidFloatingActionButtonGroup中获取某一个RFAB -->
+        <attr name="rfab_identification_code" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="ExpandingCollection">
+        <attr name="cardWidth" format="dimension" />
+        <attr name="cardHeight" format="dimension" />
+        <attr name="cardHeaderHeightExpanded" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="LabelView">
+        <!-- 设置文字内容 -->
+        <attr name="lv_text" format="string"/>
+        <!-- 设置文字颜色,默认#ffffff -->
+        <attr name="lv_text_color" format="color"/>
+        <!-- 设置文字大小,默认11sp -->
+        <attr name="lv_text_size" format="dimension"/>
+        <!-- 设置文字是否支持加粗,默认true -->
+        <attr name="lv_text_bold" format="boolean"/>
+        <!-- 设置文字是否支持全部大写,默认true-->
+        <attr name="lv_text_all_caps" format="boolean"/>
+        <!-- 设置背景颜色,默认"#FF4081"-->
+        <attr name="lv_background_color" format="color"/>
+        <!-- 设置LabelView所在矩形最小宽高,默认mFillTriangle?35dp:50dp-->
+        <attr name="lv_min_size" format="dimension"/>
+        <!-- 设置文字上下padding,默认3.5dp,mFillTriangle为true时无效-->
+        <attr name="lv_padding" format="dimension"/>
+        <!-- 设置LabelView方向 -->
+        <attr name="lv_gravity" format="enum">
+            <enum name="TOP_LEFT" value="51"/>
+            <enum name="TOP_RIGHT" value="53"/>
+            <enum name="BOTTOM_LEFT" value="83"/>
+            <enum name="BOTTOM_RIGHT" value="85"/>
+        </attr>
+        <!-- 设置是否填充三角区域,默认false -->
+        <attr name="lv_fill_triangle" format="boolean"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="Rotate3dAnimation">
+        <attr name="rollType" format="enum">
+            <enum name="x" value="0"/>
+            <enum name="y" value="1"/>
+            <enum name="z" value="2"/>
+        </attr>
+        <attr name="fromDeg" format="float" />
+        <attr name="toDeg" format="float" />
+        <attr name="pivotX" format="fraction"/>
+        <attr name="pivotY" format="fraction" />
+    </declare-styleable>
+
+</resources>

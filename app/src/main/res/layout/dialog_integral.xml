@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="20dp"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/text_background"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/huodong_rule"
+            android:padding="10dp"
+            android:lineSpacingExtra="10dp"
+            android:text="1、用户可以使用积分兑换相应的礼品，兑换的礼品以实物为准;\n2、用户也可以使用幸运大抽奖，并且将消耗一定的积分，获得一定奖品后，我们将与您联系;\n3、用户的积分可以通过打标签功能获取，每完成一次图片标注，将获取一定的积分数量;\n4、积分将在每年的12月31日24时清空，请及时使用。"
+            android:textColor="@color/font_light" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/huodong_rule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rule_background"
+        android:padding="5dp"
+        android:text="活动规则"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

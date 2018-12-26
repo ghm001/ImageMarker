@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/theme1</color>
+    <color name="colorPrimaryDark">@color/theme1</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="yellow">#FFC107</color>
+
+    <color name="background">#f3f3f3</color><!--主题背景颜色-->
+    <color name="background_fragment">#f5f5f5</color>
+    <color name="background_fragment_two">#eeeeee</color>
+    <color name="background_fragment_three">#e0e0e0</color>
+    <color name="write">#fff</color>
+    <color name="gray1">#808080</color>
+    <color name="gray2">#707070</color>
+    <color name="gray3">#8c8c8c</color>
+    <color name="gray4">#dbdbdb</color>
+    <color name="transparent1">#00000000</color>
+
+    <color name="titleBar">#66ba8e</color>
+    <color name="titleBar1">#159963</color>
+    <color name="brown">#6d4c41</color>
+
+    <color name="systemBar">#33385a</color><!--状态栏-->
+    <color name="theme">#333850</color><!--主题颜色 #333850-->
+    <color name="theme1">#ff252e39</color><!--主题颜色 3a376e-->
+    <color name="button">#01a2eb</color><!--按钮颜色-->
+    <color name="button1">#009bdb</color><!--按钮颜色-->
+
+    <color name="button_two">#7ADFB8</color>
+    <color name="font_light">#464e76</color>
+
+    <color name="headGradientStart">#00ffffff</color>
+    <color name="headGradientCenter">#00ffffff</color>
+    <color name="headGradientEnd">#96000000</color>
+
+    <color name="transparent">#00ffffff</color>
+    <color name="bgSolidDark">#55000000</color>
+    <color name="bgGradientStart">#000000</color>
+    <color name="bgGradientEnd">#d8000000</color>
+
+    <color name="translate">#00000000</color>
+    <color name="transparent_background_button">#f5f5f5</color>
+    <color name="transparent_background">#ffffff</color>
+
+    <color name="bgColor_overlay_black">#666666</color>
+
+    <color name="bgColor2">#C0AFD0</color>
+    <color name="bgColor3">#F88F55</color>
+    <color name="bgColor4">#67CCB7</color>
+</resources>

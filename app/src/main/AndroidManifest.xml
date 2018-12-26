@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.team.imagemarker">
+
+    <!-- 系统要求的权限 -->
+    <uses-permission android:name="com.lovcreate.xichai_app.permission.JPUSH_MESSAGE" />
+
+    <!-- 系统要求的权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+
+    <!-- 系统要求的权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- 系统要求的权限 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- 系统要求的权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- 系统要求的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!-- 访问网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 读取手机当前状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- 读取手机内部存储 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- 写外部存储 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- 访问wifi网络信息,wifi信息可用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- 控制振动器 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- 读取手机通讯录 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- 接受短信 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <!-- 读取短信 -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <!-- 访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- 使用摄像头 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/m"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Mob注册声明 -->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 微信分享回调 -->
+        <activity
+            android:name="cn.sharesdk.onekeyshare.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- QQ第三方登录 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1106389984" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+
+        <activity
+            android:name=".activitys.user.SplashActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--主界面-->
+        <activity android:name=".activitys.home.HomeActivity" />
+
+        <!--登录注册主页-->
+        <activity android:name=".activitys.home.MainActivity" />
+
+        <!--重置密码-->
+        <activity android:name=".activitys.user.UserResetPassActivity" />
+
+        <!--修改个人信息-->
+        <activity android:name=".activitys.user.UpdateUserMessageActivity" />
+
+        <!--历史记录-->
+        <activity android:name=".activitys.history.HistoryRecordActivity" />
+
+        <!--任务情况-->
+        <activity android:name=".activitys.user.UserMissionActivity" />
+
+        <!--猜你喜欢-->
+        <activity android:name=".activitys.imagscan.GuessYouLikeFragment" />
+
+        <!--发表话题-->
+        <activity android:name=".activitys.saying.SendMoodActivity" />
+
+        <!--话题浏览-->
+        <activity android:name=".activitys.saying.SayingScanActivity" />
+
+        <!--意见反馈-->
+        <activity android:name=".activitys.user.FeedBackActivity" />
+
+        <!--自由搜索-->
+        <activity android:name=".activitys.user.UserSearchActivity" />
+
+        <!--任务中心(older)-->
+        <activity
+            android:name=".activitys.tasks.UserTaskActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!--美图浏览-->
+        <activity android:name=".activitys.imagscan.LookPictureActivity" />
+
+        <!--领域推送-->
+        <activity android:name=".activitys.imagscan.MajorPushFragment" />
+
+        <!--图片标注-->
+        <activity
+            android:name=".activitys.mark.MarkHomeActivity"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!--任务概览-->
+        <activity android:name=".activitys.tasks.UserTaskOverViewActivity" />
+
+        <!--图组详情-->
+        <activity android:name=".activitys.imagscan.ImgScanMainActivity" />
+
+        <!--欢迎页-->
+        <activity android:name=".activitys.home.SplashActivity" />
+
+        <!--转盘抽奖-->
+        <activity
+            android:name=".activitys.integral.LuckDrawActivity"
+            android:theme="@style/LuckDrawActivity" />
+
+        <!--兴趣论坛主页-->
+        <activity android:name=".activitys.hobby.HobbyMainActivity" />
+
+        <!--兴趣选择-->
+        <activity android:name=".activitys.hobby.HobbySelectActivity" />
+
+        <!--积分商城主页-->
+        <activity android:name=".activitys.integral.IntegralMainActivity" />
+
+        <!--兴趣论坛-->
+        <activity android:name=".activitys.hobby.HobbyActivity" />
+
+        <!--专业领域选择-->
+        <activity android:name=".activitys.user.ProfessionalChoiceActivity" />
+
+        <!--图组详情(order)-->
+        <activity android:name=".activitys.home.DetailGroupActivity" />
+
+        <!--图片纠错-->
+        <activity android:name=".activitys.mark.ErrorCollectionActivity" />
+
+        <!--积分详细-->
+        <activity android:name=".activitys.integral.IntegralDetail" />
+
+        <!--Android7.0文件共享-->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.team.imagemarker.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+    </application>
+
+</manifest>

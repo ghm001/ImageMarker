@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:widget="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/title_bar"/>
+
+    <EditText
+        android:id="@+id/feed_back_content"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@android:color/transparent"
+        android:gravity="top"
+        android:hint="说说您给我们的悄悄话..."
+        android:maxHeight="200dp"
+        android:maxLines="10"
+        android:padding="5dp"
+        android:textColor="#000000"
+        android:textColorHint="#999999"
+        android:textSize="16sp" />
+
+    <com.team.imagemarker.utils.WavyLineView
+        android:id="@+id/release_wavyLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:amplitude="8dp"
+        app:strokeColor="#ef6c00"
+        app:strokeWidth="1dp" />
+
+    <com.team.imagemarker.utils.PaperButton
+        android:id="@+id/submit_feed_back"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="110dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        widget:paper_corner_radius="19dp"
+        widget:paper_text="提 交"
+        widget:paper_text_size="16sp"
+        widget:paper_color="@color/button"
+        widget:paper_text_color="#ffffff" />
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:textColor="@color/font_light"-->
+        <!--android:textSize="20sp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="用户反馈"/>-->
+
+</LinearLayout>

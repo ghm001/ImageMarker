@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DevInfor>
+
+	<SinaWeibo
+		Id="1"
+		SortId="1"
+		AppKey="359046354"
+		AppSecret="db72d81b0f38c3bf00d72e529f25f1ee"
+		RedirectUrl="http://www.baidu.com"
+		ShareByAppClient="true"
+		Enable="true" />
+
+	<QQ
+		Id="2"
+		SortId="2"
+		AppId="1105819277"
+		AppKey="QawuVbAVDtqZP3Fe"
+		ShareByAppClient="true"
+		Enable="true" />
+
+	<QZone
+		Id="3"
+		SortId="3"
+		AppId="100371282"
+		AppKey="aed9b0303e3ed1e27bae87c33761161d"
+		Enable="true" />
+
+	<Wechat
+		Id="4"
+		SortId="4"
+		AppId="wxd20fdec402525b3a"
+		AppSecret="e9445b567cc6a4f11d4ce7d1e431a289"
+		BypassApproval="false"
+		Enable="true" />
+
+	<WechatMoments
+		Id="5"
+		SortId="5"
+		AppId="wxd20fdec402525b3a"
+		AppSecret="e9445b567cc6a4f11d4ce7d1e431a289"
+		BypassApproval="false"
+		Enable="true" />
+
+</DevInfor>

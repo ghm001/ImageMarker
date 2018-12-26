@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="province">
+        <item>农林牧渔</item>
+        <item>医药行业</item>
+        <item>建筑建材</item>
+        <item>冶金矿产</item>
+        <item>石油化工</item>
+        <item>交通运输</item>
+        <item>信息产业</item>
+        <item>机械机电</item>
+        <item>轻工食品</item>
+        <item>服装纺织</item>
+        <item>制品行业</item>
+        <item>办公文教</item>
+        <item>电子电工</item>
+        <item>家居用品</item>
+        <item>教育行业</item>
+        <item>物资</item>
+    </string-array>
+
+    <string-array name="two_level">
+        <item>农业-畜牧业-林业-渔业-器械制造</item>
+        <item>制药业-器械制造-卫生材料-药用化学-医护人员</item>
+        <item>建筑业-土木工程-桥梁工程-建筑安装-建筑装饰-建筑相关</item>
+        <item>金属矿产-金属冶金-有色金属-金属矿物-器具制造-设备制造-稀土产业</item>
+        <item>石油开采-石油制品-机器制造-矿业设备-无机化工-有机化工-器材制造-化学研究-日用化学品</item>
+        <item>交通工具-交通标志-交通管理-交通相关</item>
+        <item>器件制造-软件行业-通讯产品-传播器材</item>
+        <item>机械制品-日常工具-专用设备-其他</item>
+        <item>食品制造-日常用具-轻工产业-食品加工-其他</item>
+        <item>服饰制造-加工设备-纺织业-工艺纺织-其他</item>
+        <item>广告材料-印刷出版-设备制造-其他制品</item>
+        <item>教学用品-专用器具-其他</item>
+        <item>零件制造-器件研究-电工产品</item>
+        <item>家居用品-其他</item>
+        <item>植物学研究-动物学研究-教育相关-其他研究专业</item>
+        <item>包装用品-相关设备-其他</item>
+    </string-array>
+
+    <string-array name="hobby">
+        <item>植物</item>
+        <item>动物</item>
+        <item>风景</item>
+        <item>山水</item>
+        <item>生活</item>
+        <item>都市</item>
+        <item>科技</item>
+        <item>建筑</item>
+        <item>工具</item>
+        <item>机械</item>
+        <item>教育</item>
+        <item>汽车</item>
+        <item>人文</item>
+        <item>历史</item>
+        <item>游戏</item>
+        <item>影视</item>
+        <item>动漫</item>
+        <item>运动</item>
+        <item>文艺</item>
+        <item>数码</item>
+        <item>美食</item>
+        <item>旅行</item>
+        <item>工业</item>
+        <item>化学</item>
+    </string-array>
+
+    <string-array name="hobby_id">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+    </string-array>
+
+</resources>

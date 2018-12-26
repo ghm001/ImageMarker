@@ -1,0 +1,35 @@
+{
+  "code": 200,
+  "msg": "ok",
+  "result": [
+    {
+      "itemImg": "http://img.hb.aicdn.com/3f04db36f22e2bf56d252a3bc1eacdd2a0416d75221a7c-rpihP1_fw658",
+      "itemName": "内容标题",
+      "imgTag": "2017-06-23 17:02:00"
+    },
+    {
+      "coverImageUrl": "http://img.hb.aicdn.com/09302f8c939c76bb920af0aa8ea0a7ea8ae286b8a6de-1Teqka_fw658",
+      "mapImageUrl": "内容标题",
+      "imgTag": "2017-06-01 17:02:00"
+    },
+    {
+      "coverImageUrl": "http://img.hb.aicdn.com/5342e50c6b6876b7cfde7dcdc3f89b290997624f37c56-qoOZli_fw658",
+      "mapImageUrl": "内容标题",
+      "imgTag": "2017-06-02 17:02:00"
+    },
+    {
+      "coverImageUrl": "http://img.hb.aicdn.com/92cd31abfec5cc1701066f7a77fbeebc730e39b150e61-X6vafO_fw658",
+      "mapImageUrl": "内容标题",
+      "imgTag": "2017-06-03 17:02:00"
+    },{
+      "coverImageUrl": "http://img.hb.aicdn.com/5342e50c6b6876b7cfde7dcdc3f89b290997624f37c56-qoOZli_fw658",
+      "mapImageUrl": "内容标题",
+      "imgTag": "2017-06-02 17:02:00"
+    },
+    {
+      "coverImageUrl": "http://img.hb.aicdn.com/92cd31abfec5cc1701066f7a77fbeebc730e39b150e61-X6vafO_fw658",
+      "mapImageUrl": "内容标题",
+      "imgTag": "2017-06-03 17:02:00"
+    }
+  ]
+}

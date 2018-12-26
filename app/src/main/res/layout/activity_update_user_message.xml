@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:widget="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_update_user_message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/select_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@color/write"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="头像"
+            android:textColor="#424242"
+            android:textSize="15dp" />
+
+        <com.team.imagemarker.utils.CircleImageView
+            android:id="@+id/user_head_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="105dp"
+            android:src="@mipmap/default_avatar"
+            app:border_color="@color/gray1"
+            app:border_width="1dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:src="@mipmap/ic_open" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/write"
+            android:paddingBottom="17dp"
+            android:paddingLeft="18dp"
+            android:paddingTop="17dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="昵称"
+                android:textColor="#424242"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/user_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="85dp"
+                android:background="@drawable/edit_text"
+                android:hint="取一个好听的名字吧..."
+                android:inputType="text"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textColor="#424242"
+                android:textSize="16sp" />
+
+            <!--<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Limynl"
+                android:textSize="16sp"
+                android:textColor="#424242"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="85dp"
+                android:layout_centerVertical="true"/>-->
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/background" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/write"
+            android:paddingBottom="17dp"
+            android:paddingLeft="18dp"
+            android:paddingTop="17dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="年龄"
+                android:textColor="#424242"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/user_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="85dp"
+                android:background="@drawable/edit_text"
+                android:hint="年龄不是秘密哟..."
+                android:inputType="number"
+                android:textColor="#424242"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/background" />
+
+        <RelativeLayout
+            android:id="@+id/select_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/write"
+            android:paddingBottom="17dp"
+            android:paddingLeft="18dp"
+            android:paddingTop="17dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="性别"
+                android:textColor="#424242"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/user_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="85dp"
+                android:gravity="center"
+                android:text="男"
+                android:textColor="@color/gray1"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:src="@mipmap/ic_open" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/background" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/write"
+            android:paddingBottom="17dp"
+            android:paddingLeft="18dp"
+            android:paddingTop="17dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="电话号码"
+                android:textColor="#424242"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/user_number_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="85dp"
+                android:background="@drawable/edit_text"
+                android:hint="17843128994"
+                android:inputType="number"
+                android:maxLength="11"
+                android:singleLine="true"
+                android:textColor="#424242"
+                android:textSize="16sp"
+                android:focusable="false"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/background" />
+
+        <RelativeLayout
+            android:id="@+id/select_object"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/write"
+            android:paddingBottom="17dp"
+            android:paddingLeft="18dp"
+            android:paddingTop="17dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="专业领域"
+                android:textColor="#424242"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/zhuanye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="85dp"
+                android:layout_toLeftOf="@+id/object_select_open"
+                android:gravity="center_vertical"
+                android:text="请选择您的专业领域"
+                android:textColor="@color/gray1"
+                android:textSize="16sp"
+                android:singleLine="true"/>
+
+            <ImageView
+                android:id="@+id/object_select_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:src="@mipmap/ic_open" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/background" />
+
+        <RelativeLayout
+            android:id="@+id/user_hobby_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/write"
+            android:paddingBottom="17dp"
+            android:paddingLeft="18dp"
+            android:paddingTop="17dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="兴趣爱好"
+                android:textColor="#424242"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/user_hobby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="85dp"
+                android:layout_toLeftOf="@+id/hobby_select_open"
+                android:gravity="center_vertical"
+                android:text="请选择您的兴趣爱好"
+                android:textColor="@color/gray1"
+                android:textSize="16sp"
+                android:singleLine="true"/>
+
+            <ImageView
+                android:id="@+id/hobby_select_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:src="@mipmap/ic_open" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <com.team.imagemarker.utils.PaperButton
+        android:id="@+id/user_message_submit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        widget:paper_color="@color/button"
+        widget:paper_corner_radius="19dp"
+        widget:paper_text="保 存"
+        widget:paper_text_color="#ffffff"
+        widget:paper_text_size="16sp" />
+
+</LinearLayout>

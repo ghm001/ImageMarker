@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_release"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/title_bar"/>
+
+    <EditText
+        android:id="@+id/edit_saying_content"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@android:color/transparent"
+        android:gravity="top"
+        android:hint="说点什么吧..."
+        android:maxHeight="150dp"
+        android:maxLines="10"
+        android:padding="5dp"
+        android:textColor="#000000"
+        android:textColorHint="#999999"
+        android:textSize="16sp" />
+
+    <com.team.imagemarker.utils.WavyLineView
+        android:id="@+id/release_wavyLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:amplitude="8dp"
+        app:strokeColor="#ef6c00"
+        app:strokeWidth="1dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/select_picture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        android:scrollbarStyle="outsideOverlay"
+        app:layoutManager="android.support.v7.widget.GridLayoutManager"
+        app:spanCount="4"
+        tools:listitem="@layout/layout_car_dynamic_select_photo" />
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    android:background="@color/write">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#F88F55" />
+
+    <TextView
+        android:id="@+id/operate_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="操作成功"
+        android:textColor="@color/font_light"
+        android:textSize="18sp"
+        android:paddingTop="50dp"
+        android:paddingBottom="30dp"/>
+
+</LinearLayout>

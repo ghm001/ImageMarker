@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/img_nav_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.team.imagemarker.utils.scrollview.MyScrollView
+            android:id="@+id/nav_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.team.imagemarker.navbanner.BannerLayout
+                    android:id="@+id/top_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="175dp"
+                    app:autoPlayDuration="4000"
+                    app:indicatorMargin="10dp"
+                    app:indicatorPosition="rightBottom"
+                    app:indicatorShape="rect"
+                    app:indicatorSpace="4dp"
+                    app:isAutoPlay="true"
+                    app:scrollDuration="800"
+                    app:selectedIndicatorColor="@color/theme"
+                    app:selectedIndicatorHeight="7dp"
+                    app:selectedIndicatorWidth="7dp"
+                    app:unSelectedIndicatorColor="@color/write"
+                    app:unSelectedIndicatorHeight="7dp"
+                    app:unSelectedIndicatorWidth="7dp" />
+                <!--android:foreground="@drawable/background_gradient"-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/white"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp">
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="5dp"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="#464e76" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="22dp"
+                            android:text="热门种类"
+                            android:textAppearance="@style/cardHeadTitle"
+                            android:textColor="@color/font_light"
+                            android:textSize="16dp" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/random_push_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:drawableLeft="@mipmap/select_category"
+                        android:drawablePadding="5dp"
+                        android:text="热门种类"
+                        android:textColor="@color/font_light"
+                        android:textSize="14sp" />
+
+                    <com.team.imagemarker.utils.MyGridView
+                        android:id="@+id/hot_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/random_push_title"
+                        android:columnWidth="90dp"
+                        android:horizontalSpacing="3dp"
+                        android:numColumns="3"
+                        android:padding="5dp"
+                        android:verticalSpacing="3dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/like_viewpager_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:drawableLeft="@mipmap/btn_like"
+                        android:drawablePadding="5dp"
+                        android:text="猜你喜欢"
+                        android:textColor="@color/font_light"
+                        android:textSize="14sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+                        android:layout_below="@+id/like_viewpager_title"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:color/white"
+                        android:paddingBottom="4dp"
+                        android:paddingTop="6dp">
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/like_viewpager"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp" />
+
+                        <LinearLayout
+                            android:id="@+id/viewpager_indicator"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/select_category_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:drawableLeft="@mipmap/select_category"
+                        android:drawablePadding="5dp"
+                        android:text="图片纠错"
+                        android:textColor="@color/font_light"
+                        android:textSize="14sp" />
+
+                    <!--<ListView
+                        android:id="@+id/select_category"
+                        android:layout_below="@+id/select_category_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#eeeff3"
+                        android:layout_marginTop="3dp"
+                        android:divider="@null"
+                        android:scrollbars="none"
+                        android:clickable="true"
+                        android:cacheColorHint="#fafafa"/>-->
+
+                    <com.team.imagemarker.utils.MyGridView
+                        android:id="@+id/error_correction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/select_category_title"
+                        android:columnWidth="95dp"
+                        android:horizontalSpacing="2dp"
+                        android:numColumns="3"
+                        android:padding="5dp"
+                        android:verticalSpacing="5dp"
+                        android:background="@color/write"/>
+
+                </RelativeLayout>
+
+                <include layout="@layout/footer_common" />
+
+            </LinearLayout>
+
+        </com.team.imagemarker.utils.scrollview.MyScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/transparent1"
+        android:paddingTop="25dp">
+
+        <include layout="@layout/search_bar" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

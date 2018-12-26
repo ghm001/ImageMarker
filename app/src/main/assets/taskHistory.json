@@ -1,0 +1,141 @@
+{
+  "code": 200,
+  "msg": "ok",
+  "result": [
+    {
+      "mData": "2017-01-01",
+      "historyRecord": [
+        {
+          "title": "图组名称一",
+          "operatorType": "系统推送"
+        },
+        {
+          "title": "图组名称二",
+          "operatorType": "兴趣选择"
+        },
+        {
+          "title": "图组名称三",
+          "operatorType": "兴趣选择"
+        }
+      ]
+    },
+    {
+      "mData": "2017-02-01",
+      "historyRecord": [
+        {
+          "title": "图组名称一",
+          "operatorType": "系统推送"
+        },
+        {
+          "title": "图组名称二",
+          "operatorType": "兴趣选择"
+        },
+        {
+          "title": "图组名称三",
+          "operatorType": "兴趣选择"
+        }
+      ]
+    },
+    {
+      "mData": "2017-03-01",
+      "historyRecord": [
+        {
+          "title": "图组名称一",
+          "operatorType": "系统推送"
+        },
+        {
+          "title": "图组名称二",
+          "operatorType": "兴趣选择"
+        },
+        {
+          "title": "图组名称三",
+          "operatorType": "兴趣选择"
+        }
+      ]
+    },
+    {
+      "mData": "2017-04-01",
+      "historyRecord": [
+        {
+          "title": "图组名称一",
+          "operatorType": "系统推送"
+        },
+        {
+          "title": "图组名称二",
+          "operatorType": "兴趣选择"
+        },
+        {
+          "title": "图组名称三",
+          "operatorType": "兴趣选择"
+        }
+      ]
+    },{
+      "mData": "2017-05-01",
+      "historyRecord": [
+        {
+          "title": "图组名称一",
+          "operatorType": "系统推送"
+        },
+        {
+          "title": "图组名称二",
+          "operatorType": "兴趣选择"
+        },
+        {
+          "title": "图组名称三",
+          "operatorType": "兴趣选择"
+        }
+      ]
+    },
+    {
+      "mData": "2017-06-01",
+      "historyRecord": [
+        {
+          "title": "图组名称一",
+          "operatorType": "系统推送"
+        },
+        {
+          "title": "图组名称二",
+          "operatorType": "兴趣选择"
+        },
+        {
+          "title": "图组名称三",
+          "operatorType": "兴趣选择"
+        }
+      ]
+    },
+    {
+      "mData": "2017-07-01",
+      "historyRecord": [
+        {
+          "title": "图组名称一",
+          "operatorType": "系统推送"
+        },
+        {
+          "title": "图组名称二",
+          "operatorType": "兴趣选择"
+        },
+        {
+          "title": "图组名称三",
+          "operatorType": "兴趣选择"
+        }
+      ]
+    },
+    {
+      "mData": "2017-08-01",
+      "historyRecord": [
+        {
+          "title": "图组名称一",
+          "operatorType": "系统推送"
+        },
+        {
+          "title": "图组名称二",
+          "operatorType": "兴趣选择"
+        },
+        {
+          "title": "图组名称三",
+          "operatorType": "兴趣选择"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_look_picture"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    android:focusableInTouchMode="true">
+
+    <include layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/detail_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/write"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/detail_send"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="发送"
+            android:textColor="@color/gray1"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toLeftOf="@+id/detail_send"
+            android:layout_toStartOf="@+id/detail_send"
+            android:background="@drawable/circle_detial_edit_bg">
+
+            <EditText
+                android:id="@+id/detail_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:gravity="center_vertical"
+                android:hint="说点儿什么吧..."
+                android:maxHeight="85dp"
+                android:minHeight="40dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:textColor="#4e5257"
+                android:textColorHint="#999999"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.team.imagemarker.utils.scrollview.BounceScrollView
+        android:layout_below="@+id/title_bar"
+        android:layout_above="@+id/detail_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/detail_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/detail_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:overScrollMode="never" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gray_gradient" />
+
+                <TextView
+                    android:id="@+id/image_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginRight="15dp"
+                    android:text="1/6"
+                    android:textColor="@color/font_light"
+                    android:textSize="25sp"
+                    android:textStyle="italic|bold" />
+
+            </RelativeLayout>
+
+            <com.team.imagemarker.utils.tag.TagGroup
+                android:id="@+id/image_tag"
+                style="@style/TagGroup"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp" />
+
+            <com.team.imagemarker.utils.WavyLineView
+                android:id="@+id/release_wavyLine"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                app:amplitude="8dp"
+                app:strokeColor="#f88f55"
+                app:strokeWidth="1dp" />
+
+            <RelativeLayout
+                android:id="@+id/random_push_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="#f88f55" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="22dp"
+                    android:text="热门评论"
+                    android:textAppearance="@style/cardHeadTitle"
+                    android:textColor="@color/font_light"
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+
+            <com.team.imagemarker.utils.AdaptiveListView
+                android:id="@+id/detail_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:cacheColorHint="#fafafa"
+                android:divider="@null" />
+
+            <TextView
+                android:id="@+id/no_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:text="没有评论^_^"
+                android:textColor="@color/font_light"
+                android:textSize="20sp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </com.team.imagemarker.utils.scrollview.BounceScrollView>
+
+</RelativeLayout>

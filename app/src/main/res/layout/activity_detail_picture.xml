@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_detail_picture"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#646464">
+
+    <ImageView
+        android:id="@+id/close_scan"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@mipmap/close"/>
+
+    <TextView
+        android:id="@+id/indicator_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:text="1/6"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/detail_picture_viewpager"
+        android:layout_below="@+id/indicator_tv"
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:overScrollMode="never" />
+
+    <com.team.imagemarker.utils.MyGridView
+        android:id="@+id/scan_marker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/detail_picture_viewpager"
+        android:numColumns="6" />
+
+</RelativeLayout>

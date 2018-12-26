@@ -1,0 +1,89 @@
+{
+  "tag": "success",
+  "result": [
+    {
+      "userHeadIcon": "http://139.199.23.142:8080/TestShowMessage1/marker/shopping/img1.jpg",
+      "userName": "Tom",
+      "userJob": "软件工程",
+      "userTime": "2017-01-01 08:59:00",
+      "userHobbyTag": "风景,人物,建筑",
+      "userContent": "踏入胜利的天堂前先要经过苦训的试练，流光所有的汗水，用尽所有的力气，别让身体停下",
+      "userImg1": "http://139.199.23.142:8080/TestShowMessage1/marker/shopping/img1.jpg",
+      "userImg2": "http://139.199.23.142:8080/TestShowMessage1/marker/shopping/img2.jpg",
+      "userImg3": "http://139.199.23.142:8080/TestShowMessage1/marker/shopping/img3.jpg",
+      "userImg4": "",
+      "userImg5": "",
+      "userImg6": ""
+    },
+    {
+      "userHeadIcon": "http://139.199.23.142:8080/TestShowMessage1/marker/shopping/img1.jpg",
+      "userName": "Jack",
+      "userJob": "Android开发",
+      "userTime": "2017-01-01 08:59:00",
+      "userHobbyTag": "好看的风景,图片标签描述,汽车, 美图欣赏",
+      "userContent": "踏入胜利的天堂前先要经过苦训的试练，流光所有的汗水，用尽所有的力气，别让身体停下",
+      "userImg1": "http://obs.myhwclouds.com/look.admin.image/华为/2017-5-20/手机-桌子.jpg",
+      "userImg2": "http://obs.myhwclouds.com/look.admin.image/华为/2017-5-20/笔记本电脑-桌子-鼠标-手机.jpg",
+      "userImg3": "http://obs.myhwclouds.com/look.admin.image/华为/2017-5-20/笔记本电脑-椅子-眼睛-桌子.jpg",
+      "userImg4": "",
+      "userImg5": "",
+      "userImg6": ""
+    },
+    {
+      "userHeadIcon": "http://139.199.23.142:8080/TestShowMessage1/marker/shopping/img1.jpg",
+      "userName": "Limynl",
+      "userJob": "Java开发",
+      "userTime": "2017-01-01 08:59:00",
+      "userHobbyTag": "测试标签,测试兴趣社区,兴趣",
+      "userContent": "踏入胜利的天堂前先要经过苦训的试练，流光所有的汗水，用尽所有的力气，别让身体停下",
+      "userImg1": "http://obs.myhwclouds.com/look.admin.image/华为/2017-5-22/剪刀.jpg",
+      "userImg2": "http://obs.myhwclouds.com/look.admin.image/华为/2017-5-22/机器人-火星.jpg",
+      "userImg3": "http://obs.myhwclouds.com/look.admin.image/华为/2017-5-22/架构-钢厂-工厂-钢铁生产.jpg",
+      "userImg4": "",
+      "userImg5": "",
+      "userImg6": ""
+    },
+    {
+      "userHeadIcon": "http://139.199.23.142:8080/TestShowMessage1/marker/shopping/img1.jpg",
+      "userName": "Rose",
+      "userJob": "前端工程师",
+      "userTime": "2017-01-01 08:59:00",
+      "userHobbyTag": "风景,人物,建筑",
+      "userContent": "踏入胜利的天堂前先要经过苦训的试练，流光所有的汗水，用尽所有的力气，别让身体停下",
+      "userImg1": "http://139.199.23.142:8080/TestShowMessage1/marker/shopping/img1.jpg",
+      "userImg2": "http://139.199.23.142:8080/TestShowMessage1/marker/shopping/img2.jpg",
+      "userImg3": "http://139.199.23.142:8080/TestShowMessage1/marker/shopping/img3.jpg",
+      "userImg4": "",
+      "userImg5": "",
+      "userImg6": ""
+    },
+    {
+      "userHeadIcon": "http://139.199.23.142:8080/TestShowMessage1/marker/shopping/img1.jpg",
+      "userName": "Json",
+      "userJob": "大数据分析师",
+      "userTime": "2017-01-01 08:59:00",
+      "userHobbyTag": "大桥,古建筑,好看的图片",
+      "userContent": "踏入胜利的天堂前先要经过苦训的试练，流光所有的汗水，用尽所有的力气，别让身体停下",
+      "userImg1": "http://139.199.23.142:8080/TestShowMessage1/marker/shopping/img1.jpg",
+      "userImg2": "http://139.199.23.142:8080/TestShowMessage1/marker/shopping/img2.jpg",
+      "userImg3": "http://139.199.23.142:8080/TestShowMessage1/marker/shopping/img3.jpg",
+      "userImg4": "",
+      "userImg5": "",
+      "userImg6": ""
+    },
+    {
+      "userHeadIcon": "http://139.199.23.142:8080/TestShowMessage1/marker/shopping/img1.jpg",
+      "userName": "Gson",
+      "userJob": "软件架构师",
+      "userTime": "2017-01-01 08:59:00",
+      "userHobbyTag": "测试标签,图片标签描述,图片描述",
+      "userContent": "踏入胜利的天堂前先要经过苦训的试练，流光所有的汗水，用尽所有的力气，别让身体停下",
+      "userImg1": "http://obs.myhwclouds.com/look.app.photo/17/2017-06-12-18-56/1.jpg",
+      "userImg2": "http://obs.myhwclouds.com/look.app.photo/17/2017-06-12-18-56/1.jpg",
+      "userImg3": "http://139.199.23.142:8080/TestShowMessage1/marker/shopping/img3.jpg",
+      "userImg4": "",
+      "userImg5": "",
+      "userImg6": ""
+    }
+  ]
+}
